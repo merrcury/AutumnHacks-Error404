@@ -102,3 +102,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#Added by Ketan Patel
+confg.py
+demo.json
+admin-sdk.json
