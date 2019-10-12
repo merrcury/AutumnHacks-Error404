@@ -1,4 +1,5 @@
 const express=require('express');
+var bodyParser = require('body-parser');
 const app=express();
 app.use(require('./utils/cors'));
 var mail=require('./db/helpers/info');
