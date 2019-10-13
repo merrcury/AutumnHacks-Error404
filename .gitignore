@@ -106,3 +106,7 @@ venv.bak/
 # RISHU GUPTA SERVER
 server/node_modules
 client/node_modules
+#Added by Ketan Patel
+confg.py
+demo.json
+admin-sdk.json
