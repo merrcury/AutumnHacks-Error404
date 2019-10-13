@@ -16,4 +16,4 @@ app.use('/',require('./routes/police'));
 app.listen(process.env.PORT|| 4004,()=>{
     console.log("Server Started, Browse to port no 4004...");
     mail.sendmail();
-})
+});

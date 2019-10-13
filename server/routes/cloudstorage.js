@@ -9,7 +9,9 @@ exports.upload = (req, res) => {
   req.body.status=0;
   req.body.id=req.body.stationcode+shortid();
   req.body.img=req.body.id+"."+extname;
-  req.body.seen=["case created"];
+  var d = new Date();
+  var time=d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear()+" at "+d.getHours()+":"+d.getMinutes();
+  req.body.seen=["case created at "+time];
   console.log("Req body id.......... file",req.body.id);
   data = JSON.parse(JSON.stringify(req.body));
   policeOperation.case(data,res);
